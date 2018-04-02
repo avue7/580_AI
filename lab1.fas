@@ -1,0 +1,76 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 22 (PRINC "These outputs verify the correctness")-1|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 19 01)
+   ("These outputs verify the correctness")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|23 23 (PRINC " of the S-expression form created:")-2|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 19 01)
+   (" of the S-expression form created:")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|24 24 (WRITE-LINE " ")-3|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 03 31 96 19 01) (" ")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|25 28 (LET (#) (PRINC "  1. ") ...)-4|
+   #30Y(00 00 00 00 00 00 00 00 20 01 DA 71 63 DB 38 01 31 90 AC 38 11 31 8C DC
+        38 03 31 96 19 02)
+   (30. "  1. " "") (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|30 33 (LET (#) (PRINC "  2. ") ...)-5|
+   #30Y(00 00 00 00 00 00 00 00 20 01 DA 71 A0 DB 38 01 31 90 AC 38 11 31 8C DC
+        38 03 31 96 19 02)
+   ((|COMMON-LISP-USER|::|A| |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C|
+     |COMMON-LISP-USER|::|D|)
+    "  2. " "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|35 38 (LET (#) (PRINC "  3. ") ...)-6|
+   #31Y(00 00 00 00 00 00 00 00 20 01 C5 5C 5C 78 DB 38 01 31 90 AC 38 11 31 8C
+        DC 38 03 31 96 19 02)
+   ((|COMMON-LISP-USER|::|A| |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C|
+     |COMMON-LISP-USER|::|D|)
+    "  3. " "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|40 43 (LET (#) (PRINC "  4. ") ...)-7|
+   #33Y(00 00 00 00 00 00 00 00 20 01 DA DB 38 03 71 C1 DC 38 01 31 90 AC 38 11
+        31 8C DD 38 03 31 96 19 02)
+   (|COMMON-LISP-USER|::|C|
+    (|COMMON-LISP-USER|::|A| |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C|
+     |COMMON-LISP-USER|::|D|)
+    "  4. " "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|45 48 (LET (#) (PRINC "  5. ") ...)-8|
+   #30Y(00 00 00 00 00 00 00 00 20 01 DA 7B 01 DB 38 01 31 90 AC 38 11 31 8C DC
+        38 03 31 96 19 02)
+   ((|COMMON-LISP|::|+| 5. (|COMMON-LISP|::|-| 9. 3.)) "  5. " "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|50 53 (LET (#) (PRINC "  6. ") ...)-9|
+   #30Y(00 00 00 00 00 00 00 00 20 01 DA 71 63 DB 38 01 31 90 AC 38 11 31 8C DC
+        38 03 31 96 19 02)
+   ((|COMMON-LISP|::|+| 8. 9.) "  6. " "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|55 56 (PRINC "  7. ")-10|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 19 01) ("  7. ")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|57 57 (LOAD "myfile.lsp")-11|
+   #15Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 19 01)
+   ("myfile.lsp" |COMMON-LISP|::|LOAD|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|57 62 (LET (#) (PRINC "  8. Count = ") ...)-12|
+   #27Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 DB 38 11 31 8C DC 38 03 31
+        96 19 01)
+   ("  8. Count = " 0. "")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|64 65 (PRINC "  9. ")-13|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 19 01) ("  9. ")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|66 66 (WRITE "Hello World")-14|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 11 31 8C 19 01) ("Hello World")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|66 66 (WRITE-LINE "")-15|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 03 31 96 19 01) ("")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|68 69 (PRINC "  10. Exiting the interpreter clisp!!!")-16|
+   #17Y(00 00 00 00 00 00 00 00 20 01 DA 38 01 31 90 19 01)
+   ("  10. Exiting the interpreter clisp!!!")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|70 70 (QUIT)-17| #14Y(00 00 00 00 00 00 00 00 20 01 2E 00 19 01)
+   (|EXT|::|QUIT|) (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
